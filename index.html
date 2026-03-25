@@ -166,7 +166,7 @@
 
         .text-shadow-sm {
             text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
-        }
+        }  
     </style>
 </head>
 
@@ -181,18 +181,21 @@
             </div>
             <div class="hidden md:flex items-center gap-8">
                 <a class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors"
-                    href="#">Bosh sahifa</a>
+                    href="#" id="nav_home">Bosh sahifa</a>
                 <a class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors"
-                    href="#services">Xizmatlar</a>
+                    href="#services" id="nav_services">Xizmatlar</a>
                 <a class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors"
-                    href="#works">Qanday ishlaydi</a>
+                    href="#works" id="nav_works">Qanday ishlaydi</a>
                 <a class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors"
-                    href="#reviews">Mijozlar fikrlari</a>
+                    href="#reviews"  id="nav_reviews">Mijozlar fikrlari</a>
                 <a class="text-sm font-medium text-on-surface-variant hover:text-primary transition-colors"
-                    href="#contact">Aloqa</a>
+                    href="#contact" id="nav_contact">Aloqa</a>
+                    
+                    <button type="button" onclick="langChange(uz)">UZ</button>
+                    <button type="button" onclick="langChange(ru)">RU</button>
             </div>
             <a href="#contact"
-                class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2 rounded-full text-sm font-bold tracking-wider uppercase shadow-lg shadow-primary/20 hover:scale-105 transition-transform">
+                class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-6 py-2 rounded-full text-sm font-bold tracking-wider uppercase shadow-lg shadow-primary/20 hover:scale-105 transition-transform" id="nav_order">
                 buyurtma berish
             </a>
         </div>
@@ -208,23 +211,23 @@
         <div class="relative z-10 max-w-7xl mx-auto px-6 w-full">
             <div class="max-w-2xl">
                 <span
-                    class="inline-block px-4 py-1.5 bg-secondary-container text-on-secondary-container rounded-full text-xs font-bold uppercase tracking-widest mb-6">Premium
+                    class="inline-block px-4 py-1.5 bg-secondary-container text-on-secondary-container rounded-full text-xs font-bold uppercase tracking-widest mb-6" id="hero_badge">Premium
                     xizmat</span>
                 <h1
-                    class="font-headline text-5xl md:text-7xl font-800 text-on-surface leading-[1.1] mb-6 tracking-tight">
+                    class="font-headline text-5xl md:text-7xl font-800 text-on-surface leading-[1.1] mb-6 tracking-tight"  id="hero_title">
                     Uyingiz oldida <br />Professional gilam <span class="text-primary">tozalash xizmati</span>
                 </h1>
-                <p class="text-lg md:text-xl text-on-surface-variant mb-10 leading-relaxed max-w-lg">
+                <p class="text-lg md:text-xl text-on-surface-variant mb-10 leading-relaxed max-w-lg"  id="hero_desc">
                     Gilamlaringizni olib ketamiz, ularni professional uskunalar yordamida chuqur tozalaymiz va toza
                     hamda yangidek holatda qaytarib yetkazib beramiz.
                 </p>
                 <div class="flex flex-wrap gap-4">
                     <a href="#contact"
-                        class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-10 py-4 rounded-full font-bold uppercase tracking-wider shadow-xl shadow-primary/30 flex items-center gap-2 hover:translate-y-[-2px] transition-all">
+                        class="bg-gradient-to-r from-primary to-primary-container text-on-primary px-10 py-4 rounded-full font-bold uppercase tracking-wider shadow-xl shadow-primary/30 flex items-center gap-2 hover:translate-y-[-2px] transition-all" id="hero_btn_order">
                         Buyurtma berish
                     </a>
-                    <a href="tel:+998909380018"
-                        class="bg-surface-container-high text-on-surface px-10 py-4 rounded-2xl font-bold uppercase tracking-wider hover:bg-surface-container-highest transition-all">
+                    <a href="tel:+998771300300"
+                        class="bg-surface-container-high text-on-surface px-10 py-4 rounded-2xl font-bold uppercase tracking-wider hover:bg-surface-container-highest transition-all"  id="hero_btn_call" >
                         Qo‘ng‘iroq qiling
                     </a>
                 </div>
@@ -236,9 +239,9 @@
         <div class="max-w-7xl mx-auto px-6">
             <div class="flex flex-col md:flex-row justify-between items-end mb-16 gap-4">
                 <div class="max-w-xl">
-                    <h2 class="font-headline text-4xl md:text-5xl font-800 text-on-surface mb-4 tracking-tight">
+                    <h2  id="services_title" class="font-headline text-4xl md:text-5xl font-800 text-on-surface mb-4 tracking-tight">
                         Kompleks parvarish</h2>
-                    <p class="text-on-surface-variant">Har bir mato turi va tozalash ehtiyojiga moslashtirilgan
+                    <p  id="services_desc" class="text-on-surface-variant">Har bir mato turi va tozalash ehtiyojiga moslashtirilgan
                         yechimlar.</p>
                 </div>
                 <div class="hidden md:block h-px flex-1 bg-outline-variant/30 mx-12 mb-6"></div>
@@ -253,8 +256,8 @@
                             <span
                                 class="material-symbols-outlined text-primary group-hover:text-on-primary text-3xl">local_laundry_service</span>
                         </div>
-                        <h3 class="font-headline text-2xl font-700 mb-4">Gilam yuvish</h3>
-                        <p class="text-on-surface-variant max-w-sm mb-8 leading-relaxed">Tolalar ichiga chuqur kirib
+                        <h3 id="service_wash_title" class="font-headline text-2xl font-700 mb-4">Gilam yuvish</h3>
+                        <p id="service_wash_desc" class="text-on-surface-variant max-w-sm mb-8 leading-relaxed">Tolalar ichiga chuqur kirib
                             borib, yillar davomida to‘plangan kirlarni yo‘q qiladigan zamonaviy sanoat darajasidagi
                             yuvish jarayoni.</p>
                     </div>
@@ -266,11 +269,11 @@
                 <div class="bg-primary text-on-primary p-10 rounded-2xl shadow-xl flex flex-col h-full">
                     <span class="material-symbols-outlined text-5xl mb-8"
                         style="font-variation-settings: 'FILL' 1;">cleaning_services</span>
-                    <h3 class="font-headline text-2xl font-700 mb-4">Chuqur gilam tozalash</h3>
-                    <p class="text-on-primary/80 mb-8 leading-relaxed">Oddiy yuvishdan ko‘ra ko‘proq parvarish talab
+                    <h3 id="service_deep_title" class="font-headline text-2xl font-700 mb-4">Chuqur gilam tozalash</h3>
+                    <p  id="service_deep_desc" class="text-on-primary/80 mb-8 leading-relaxed">Oddiy yuvishdan ko‘ra ko‘proq parvarish talab
                         qiladigan nozik tolali gilamlar uchun maxsus bug‘li tozalash usuli.</p>
                     <div class="mt-auto pt-8 border-t border-on-primary/20">
-                        <p class="text-sm font-bold uppercase tracking-widest">Barcha gilamlar uchun kiritilgan</p>
+                        <p id="service_deep_note" class="text-sm font-bold uppercase tracking-widest">Barcha gilamlar uchun kiritilgan</p>
                     </div>
                 </div>
                 <!-- Small Cards -->
@@ -278,22 +281,22 @@
                     class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/10 shadow-sm hover:translate-y-[-5px] transition-transform">
                     <span
                         class="material-symbols-outlined text-primary-container text-4xl mb-6">format_color_reset</span>
-                    <h3 class="font-headline text-xl font-700 mb-2">Dog‘larni ketkazish</h3>
-                    <p class="text-on-surface-variant text-sm leading-relaxed">Sharob, siyoh va qahva dog‘lari uchun
+                    <h3 id="service_stain_title" class="font-headline text-xl font-700 mb-2">Dog‘larni ketkazish</h3>
+                    <p  id="service_stain_desc" class="text-on-surface-variant text-sm leading-relaxed">Sharob, siyoh va qahva dog‘lari uchun
                         maxsus kimyoviy tozalash usullari.</p>
                 </div>
                 <div
                     class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/10 shadow-sm hover:translate-y-[-5px] transition-transform">
                     <span class="material-symbols-outlined text-primary-container text-4xl mb-6">air</span>
-                    <h3 class="font-headline text-xl font-700 mb-2">Chang &amp; hidlarni yo‘qotish</h3>
-                    <p class="text-on-surface-variant text-sm leading-relaxed">Uy hayvonlari hidlari va allergenlarni
+                    <h3 id="service_dust_title" class="font-headline text-xl font-700 mb-2">Chang &amp; hidlarni yo‘qotish</h3>
+                    <p  id="service_dust_desc" class="text-on-surface-variant text-sm leading-relaxed">Uy hayvonlari hidlari va allergenlarni
                         chuqur darajada yo‘qotib, sog‘lom uy muhitini ta’minlaymiz.</p>
                 </div>
                 <div
                     class="bg-surface-container-lowest p-8 rounded-2xl border border-outline-variant/10 shadow-sm hover:translate-y-[-5px] transition-transform">
                     <span class="material-symbols-outlined text-primary-container text-4xl mb-6">local_shipping</span>
-                    <h3 class="font-headline text-xl font-700 mb-2">Olib ketish &amp; Yetkazib berish</h3>
-                    <p class="text-on-surface-variant text-sm leading-relaxed">Og‘ir ishlarni biz bajaramiz. Eshikdan
+                    <h3 id="service_delivery_title" class="font-headline text-xl font-700 mb-2">Olib ketish &amp; Yetkazib berish</h3>
+                    <p id="service_delivery_desc" class="text-on-surface-variant text-sm leading-relaxed">Og‘ir ishlarni biz bajaramiz. Eshikdan
                         eshikkacha xizmat — qo‘shimcha to‘lovsiz.</p>
                 </div>
             </div>
@@ -302,7 +305,7 @@
     <!-- How It Works (Horizontal Scroll/Flow) -->
     <section class="py-24 bg-surface overflow-hidden" id="works">
         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="font-headline text-4xl font-800 text-center mb-20 tracking-tight">Oddiy 4 bosqichli jarayon</h2>
+            <h2  id="works_title" class="font-headline text-4xl font-800 text-center mb-20 tracking-tight">Oddiy 4 bosqichli jarayon</h2>
             <div class="relative flex flex-col md:flex-row justify-between gap-8">
                 <!-- Step 1 -->
                 <div class="flex-1 text-center relative z-10">
@@ -313,8 +316,8 @@
                             class="absolute -top-2 -right-2 bg-primary text-on-primary w-8 h-8 rounded-full flex items-center justify-center font-bold">
                             1</div>
                     </div>
-                    <h4 class="font-headline font-700 text-lg mb-2">Qo‘ng‘iroq qiling</h4>
-                    <p class="text-sm text-on-surface-variant">Gilamni olib ketish vaqtini bizning jamoamiz bilan
+                    <h4 id="step1_title" class="font-headline font-700 text-lg mb-2">Qo‘ng‘iroq qiling</h4>
+                    <p id="step1_desc" class="text-sm text-on-surface-variant">Gilamni olib ketish vaqtini bizning jamoamiz bilan
                         kelishib oling.</p>
                 </div>
                 <div class="hidden md:block flex-1 border-t-2 border-dashed border-outline-variant/30 mt-10"></div>
@@ -327,8 +330,8 @@
                             class="absolute -top-2 -right-2 bg-primary text-on-primary w-8 h-8 rounded-full flex items-center justify-center font-bold">
                             2</div>
                     </div>
-                    <h4 class="font-headline font-700 text-lg mb-2">Olib ketish</h4>
-                    <p class="text-sm text-on-surface-variant">Gilamlaringizni uyingiz eshigidan bevosita olib ketamiz.
+                    <h4  id="step2_title" class="font-headline font-700 text-lg mb-2">Olib ketish</h4>
+                    <p id="step2_desc" class="text-sm text-on-surface-variant">Gilamlaringizni uyingiz eshigidan bevosita olib ketamiz.
                     </p>
                 </div>
                 <div class="hidden md:block flex-1 border-t-2 border-dashed border-outline-variant/30 mt-10"></div>
@@ -341,8 +344,8 @@
                             class="absolute -top-2 -right-2 bg-primary text-on-primary w-8 h-8 rounded-full flex items-center justify-center font-bold">
                             3</div>
                     </div>
-                    <h4 class="font-headline font-700 text-lg mb-2">Yuvish</h4>
-                    <p class="text-sm text-on-surface-variant">Maxsus jihozlangan ustaxonamizda chuqur sanoat darajasida
+                    <h4 id="step3_title" class="font-headline font-700 text-lg mb-2">Yuvish</h4>
+                    <p id="step3_desc" class="text-sm text-on-surface-variant">Maxsus jihozlangan ustaxonamizda chuqur sanoat darajasida
                         tozalash amalga oshiriladi.</p>
                 </div>
                 <div class="hidden md:block flex-1 border-t-2 border-dashed border-outline-variant/30 mt-10"></div>
@@ -355,8 +358,8 @@
                             class="absolute -top-2 -right-2 bg-primary text-on-primary w-8 h-8 rounded-full flex items-center justify-center font-bold">
                             4</div>
                     </div>
-                    <h4 class="font-headline font-700 text-lg mb-2">Yetkazib berish</h4>
-                    <p class="text-sm text-on-surface-variant">Gilamlaringizni toza, quruq va yangidek holatda qaytarib
+                    <h4 id="step4_title" class="font-headline font-700 text-lg mb-2">Yetkazib berish</h4>
+                    <p  id="step4_desc" class="text-sm text-on-surface-variant">Gilamlaringizni toza, quruq va yangidek holatda qaytarib
                         yetkazib beramiz.</p>
                 </div>
             </div>
@@ -374,14 +377,14 @@
                             <img alt="" class="h-full w-[200%] object-cover grayscale opacity-80"
                                 data-alt="Close up of a dirty, dusty carpet texture"
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBcSAVRjwGpMTeqKq73zlLSHI2WG1X-eXs-BhFnQUyoMsPzkemKli6FrZ0TG2uk2V7z0meR21kJgEJlGr4HhFl1xsd-z-Y-FS30UyVGFCc5dUf0kg3Z6ikDgXwLQ-3oMdYGLdtKrKb6OeMX0wRdLwaIBzOsa4EBOnnUe5PWMPZxkj9I1FzMYPBy9iOkKU7z6s8xVYu8q0-MNLtxNddkgwpzxygPBN-Dol1M5lbSpOF1W48dwBkWTfgMJmLQO1anHDzv55RrO1v-wFo" />
-                            <span
+                            <span id="before_label"
                                 class="absolute top-4 left-4 bg-error/80 text-on-error px-3 py-1 rounded-full text-xs font-bold uppercase">Oldin</span>
                         </div>
                         <div class="w-1/2 overflow-hidden">
                             <img alt="" class="h-full w-[200%] object-cover -translate-x-1/2"
                                 data-alt="Close up of a clean, bright white carpet texture"
                                 src="https://lh3.googleusercontent.com/aida-public/AB6AXuBZVX6cnrC9MmCNhCG6GnwA6i0Mrbfpn4-8i4OR8F1Zx3FMgudeaW1Npz86xL2pxIuSeDXEivZ-Nb73vtovP1XbQ-kPkREJ6NtZWrnUx-jVIanUR8WcvTF6BP7s7-kK4iOp9OxDBBB1hTCnVnGDZXP_to0yhBhNMiLI7bICCa9aAC7-sHao2eYH0m8E8FLeDyF2IhSDtZUFAGPlk8YUArcQy7CVutGlWZSeOQ6AahKgGU_9P6Rt4ioAJt_UxkC2OgaH2RrMTvxoTwBy" />
-                            <span
+                            <span  id="after_label"
                                 class="absolute top-4 right-4 bg-primary/80 text-on-primary px-3 py-1 rounded-full text-xs font-bold uppercase">Keyin</span>
                         </div>
                     </div>
@@ -395,7 +398,7 @@
                 </div>
             </div>
             <div>
-                <h2 class="font-headline text-4xl font-800 text-on-surface mb-8 tracking-tight">AslSifat ustunligi</h2>
+                <h2 id="adv_title" class="font-headline text-4xl font-800 text-on-surface mb-8 tracking-tight">AslSifat ustunligi</h2>
                 <div class="space-y-6">
                     <div
                         class="flex gap-4 p-4 rounded-xl bg-surface-container-lowest/50 border border-outline-variant/10">
@@ -405,8 +408,8 @@
                                 class="material-symbols-outlined text-on-secondary-fixed text-xl">precision_manufacturing</span>
                         </div>
                         <div>
-                            <h5 class="font-700 text-lg">Professional uskunalar</h5>
-                            <p class="text-on-surface-variant text-sm">Yuqori natija uchun sanoat darajasidagi
+                            <h5 id="adv_equipment_title" class="font-700 text-lg">Professional uskunalar</h5>
+                            <p  id="adv_equipment_desc" class="text-on-surface-variant text-sm">Yuqori natija uchun sanoat darajasidagi
                                 ekstraktorlar va quritish uskunalari.</p>
                         </div>
                     </div>
@@ -417,8 +420,8 @@
                             <span class="material-symbols-outlined text-on-secondary-fixed text-xl">eco</span>
                         </div>
                         <div>
-                            <h5 class="font-700 text-lg">Xavfsiz vositalar</h5>
-                            <p class="text-on-surface-variant text-sm">Gipoallergen va uy hayvonlari uchun xavfsiz
+                            <h5 id="adv_safe_title" class="font-700 text-lg">Xavfsiz vositalar</h5>
+                            <p id="adv_safe_desc" class="text-on-surface-variant text-sm">Gipoallergen va uy hayvonlari uchun xavfsiz
                                 tozalash vositalari.</p>
                         </div>
                     </div>
@@ -429,8 +432,8 @@
                             <span class="material-symbols-outlined text-on-secondary-fixed text-xl">bolt</span>
                         </div>
                         <div>
-                            <h5 class="font-700 text-lg">Tezkor xizmat</h5>
-                            <p class="text-on-surface-variant text-sm">Standart tozalash va yetkazib berish 48–72 soat
+                            <h5 id="adv_fast_title" class="font-700 text-lg">Tezkor xizmat</h5>
+                            <p id="adv_fast_desc" class="text-on-surface-variant text-sm">Standart tozalash va yetkazib berish 48–72 soat
                                 ichida amalga oshiriladi.</p>
                         </div>
                     </div>
@@ -441,8 +444,8 @@
                             <span class="material-symbols-outlined text-on-secondary-fixed text-xl">badge</span>
                         </div>
                         <div>
-                            <h5 class="font-700 text-lg">Tajribali mutaxassislar</h5>
-                            <p class="text-on-surface-variant text-sm">Turli xil tolalar (materiallar) turlarini yaxshi
+                            <h5 id="adv_staff_title" class="font-700 text-lg">Tajribali mutaxassislar</h5>
+                            <p id="adv_staff_desc" class="text-on-surface-variant text-sm">Turli xil tolalar (materiallar) turlarini yaxshi
                                 tushunadigan malakali mutaxassislar.</p>
                         </div>
                     </div>
@@ -453,7 +456,7 @@
     <!-- Reviews -->
     <section class="py-24 bg-surface" id="reviews">
         <div class="max-w-7xl mx-auto px-6">
-            <h2 class="font-headline text-4xl font-800 text-center mb-16 tracking-tight">Mijozlarimiz nima deydi</h2>
+            <h2 id="reviews_title" class="font-headline text-4xl font-800 text-center mb-16 tracking-tight">Mijozlarimiz nima deydi</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
                 <div class="bg-surface-container-lowest p-8 rounded-2xl shadow-sm border border-outline-variant/10">
                     <div class="flex gap-1 text-[#FFB800] mb-6">
@@ -463,7 +466,7 @@
                         <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
                         <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
                     </div>
-                    <p class="italic text-on-surface-variant mb-6 leading-relaxed">“Xizmat ajoyib darajada zo‘r. 10
+                    <p id="review1_text" class="italic text-on-surface-variant mb-6 leading-relaxed">“Xizmat ajoyib darajada zo‘r. 10
                         yillik fors gilamim xuddi yangidek bo‘lib qoldi. Olib ketish va qaytarib berish jarayoni juda
                         qulay va muammosiz bo‘ldi.”</p>
                     <div class="flex items-center gap-4">
@@ -471,8 +474,8 @@
                             class="w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center font-bold text-primary">
                             MS</div>
                         <div>
-                            <p class="font-700">Ravshan S.</p>
-                            <p class="text-xs text-on-surface-variant uppercase tracking-widest">Uy egasi</p>
+                            <p  id="review1_name" class="font-700">Ravshan S.</p>
+                            <p id="review1_role" class="text-xs text-on-surface-variant uppercase tracking-widest">Uy egasi</p>
                         </div>
                     </div>
                 </div>
@@ -484,7 +487,7 @@
                         <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
                         <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
                     </div>
-                    <p class="italic text-on-surface-variant mb-6 leading-relaxed">“Men foydalangan eng yaxshi gilam
+                    <p id="review2_text" class="italic text-on-surface-variant mb-6 leading-relaxed">“Men foydalangan eng yaxshi gilam
                         tozalash xizmati. Ular boshqa kompaniyalar olib tashlay olmagan dog‘larni ham tozalashga
                         muvaffaq bo‘lishdi.”</p>
                     <div class="flex items-center gap-4">
@@ -492,8 +495,8 @@
                             class="w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center font-bold text-primary">
                             AR</div>
                         <div>
-                            <p class="font-700">Gulmira T.</p>
-                            <p class="text-xs text-on-surface-variant uppercase tracking-widest">Uy egasi</p>
+                            <p  id="review2_name" class="font-700">Gulmira T.</p>
+                            <p id="review2_role" class="text-xs text-on-surface-variant uppercase tracking-widest">Uy egasi</p>
                         </div>
                     </div>
                 </div>
@@ -505,7 +508,7 @@
                         <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
                         <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
                     </div>
-                    <p class="italic text-on-surface-variant mb-6 leading-relaxed">“Tezkor, professional va narxiga juda
+                    <p id="review3_text" class="italic text-on-surface-variant mb-6 leading-relaxed">“Tezkor, professional va narxiga juda
                         munosib xizmat. Gilamlar juda yoqimli hidga ega bo‘lib, juda yumshoq bo‘lib qoldi. Albatta
                         tavsiya qilaman!”</p>
                     <div class="flex items-center gap-4">
@@ -513,8 +516,8 @@
                             class="w-12 h-12 bg-primary-fixed rounded-full flex items-center justify-center font-bold text-primary">
                             DK</div>
                         <div>
-                            <p class="font-700">Dilnoza K.</p>
-                            <p class="text-xs text-on-surface-variant uppercase tracking-widest">Business egasi</p>
+                            <p id="review3_name" class="font-700">Dilnoza K.</p>
+                            <p id="review3_role" class="text-xs text-on-surface-variant uppercase tracking-widest">Business egasi</p>
                         </div>
                     </div>
                 </div>
@@ -530,16 +533,16 @@
                     src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQtue5GR9rh0FL7NM93lanH4j7uxhLtbJ1mUSKShmd823uBS2BFIQ_mocjhwUNWDmn78Utrspl26g8HU8F9HLuwmjPyU5_OW56jnrTpTofkCq9e-cjEp7g5jXS2BCGRoIxI1ZlUlixbTRCD15XgSNY3kwvszu-MYzy_LPzllAHziwrWHWRYplGgSU9eZlHm6ZRL2M5_2xKQrKHvWgbJz-mmraB3EyhjzZw6cP7ut9-9vmugTrnm4eS1jGxcsGWwM_9RoJ1z5lPWTga" />
             </div>
             <div class="relative z-10 max-w-2xl mx-auto">
-                <h2 class="font-headline text-4xl md:text-6xl font-800 mb-8 leading-tight">Gilamlaringizga yangi hayot
+                <h2 id="cta_title" class="font-headline text-4xl md:text-6xl font-800 mb-8 leading-tight">Gilamlaringizga yangi hayot
                     baxsh eting</h2>
-                <p class="text-lg md:text-xl text-on-primary/80 mb-12">Professional xizmat farqini his qiling. Gilamni
+                <p  id="cta_desc" class="text-lg md:text-xl text-on-primary/80 mb-12">Professional xizmat farqini his qiling. Gilamni
                     olib ketish xizmatiga bugunoq buyurtma bering.</p>
                 <div class="flex flex-wrap justify-center gap-4">
-                    <a href="#contact"
+                    <a href="#contact" id="cta_btn_order"
                         class="bg-surface-container-lowest text-primary px-12 py-5 rounded-full font-bold uppercase tracking-wider shadow-2xl shadow-primary-container/40 hover:scale-105 transition-transform">
                         Buyurtma berish
                     </a>
-                    <a href="tel:+998771300300"
+                    <a href="tel:+998771300300" id="cta_btn_call"
                         class="bg-on-primary/10 border border-on-primary/20 text-on-primary backdrop-blur-md px-12 py-5 rounded-full font-bold uppercase tracking-wider hover:bg-on-primary/20 transition-all">
                         Qo‘ng‘iroq qiling
                     </a>
@@ -551,7 +554,7 @@
     <section class="py-24 bg-surface" id="contact">
         <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-20">
             <div>
-                <h2 class="font-headline text-4xl font-800 text-on-surface mb-8 tracking-tight">Bog‘lanamiz</h2>
+                <h2  id="contact_title" class="font-headline text-4xl font-800 text-on-surface mb-8 tracking-tight">Bog‘lanamiz</h2>
                 <div class="space-y-10">
                     <div class="flex gap-6 items-start">
                         <div
@@ -559,8 +562,8 @@
                             <span class="material-symbols-outlined text-primary">location_on</span>
                         </div>
                         <div>
-                            <h5 class="font-700 text-lg mb-1">Manzil</h5>
-                            <p class="text-on-surface-variant">Toshkent viloyati, Zangiota tumani <br />Ramadan
+                            <h5 id="contact_address_title" class="font-700 text-lg mb-1">Manzil</h5>
+                            <p id="contact_address_desc" class="text-on-surface-variant">Toshkent viloyati, Zangiota tumani <br />Ramadan
                                 mahallasi MFI</p>
                         </div>
                     </div>
@@ -570,8 +573,8 @@
                             <span class="material-symbols-outlined text-primary">schedule</span>
                         </div>
                         <div>
-                            <h5 class="font-700 text-lg mb-1">Ish vaqti</h5>
-                            <p class="text-on-surface-variant">24/7</p>
+                            <h5  id="contact_time_title" class="font-700 text-lg mb-1">Ish vaqti</h5>
+                            <p id="contact_time_desc" class="text-on-surface-variant">24/7</p>
                         </div>
                     </div>
                     <div class="flex gap-6 items-start">
@@ -580,10 +583,10 @@
                             <span class="material-symbols-outlined text-primary">phone_iphone</span>
                         </div>
                         <div>
-                            <h5 class="font-700 text-lg mb-1">Aloqa &amp; Ijtimoiy tarmoq</h5>
+                            <h5 id="contact_social_title" class="font-700 text-lg mb-1">Aloqa &amp; Ijtimoiy tarmoq</h5>
                             <p class="text-on-surface-variant">+998771300300</p>
                             <p class="text-on-surface-variant">+998771800800</p>
-                            <a class="text-primary font-600 mt-2 inline-flex items-center gap-1"
+                            <a id="contact_instagram"  class="text-primary font-600 mt-2 inline-flex items-center gap-1"
                                 href="https://instagram.com/aslsifat_clean">Instagram
                                 @aslsifat_clean <span class="material-symbols-outlined text-sm">open_in_new</span></a>
                         </div>
@@ -594,14 +597,14 @@
                 <form class="space-y-6">
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                         <div class="space-y-2">
-                            <label
+                            <label id="form_name_label"
                                 class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Ism</label>
                             <input
                                 class="w-full bg-surface-container-highest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all"
                                 type="text" />
                         </div>
                         <div class="space-y-2">
-                            <label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Telefon
+                            <label id="form_phone_label" class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Telefon
                                 raqam</label>
                             <input
                                 class="w-full bg-surface-container-highest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all"
@@ -609,23 +612,23 @@
                         </div>
                     </div>
                     <div class="space-y-2">
-                        <label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Gilam
+                        <label id="form_size_label" class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Gilam
                             o‘lchami / Tafsilotlari</label>
                         <select
                             class="w-full bg-surface-container-highest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all">
-                            <option>O‘lcham turini tanlang</option>
-                            <option>Kichik (4 m² gacha)</option>
-                            <option>O‘rta (4–10 m²)</option>
-                            <option>Katta (10 m² dan katta)</option>
+                            <option id="opt_default">O‘lcham turini tanlang</option>
+                            <option id="opt_small">Kichik (4 m² gacha)</option>
+                            <option  id="opt_medium">O‘rta (4–10 m²)</option>
+                            <option  id="opt_large">Katta (10 m² dan katta)</option>
                         </select>
                     </div>
                     <div class="space-y-2">
-                        <label class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Xabar</label>
+                        <label id="form_message_label" class="text-xs font-bold uppercase tracking-widest text-on-surface-variant">Xabar</label>
                         <textarea
                             class="w-full bg-surface-container-highest border-none rounded-xl p-4 focus:ring-2 focus:ring-primary focus:bg-surface-container-lowest transition-all"
                             rows="4"></textarea>
                     </div>
-                    <button
+                    <button  id="form_submit"
                         class="w-full bg-primary text-on-primary py-4 rounded-xl font-bold uppercase tracking-widest shadow-lg shadow-primary/20 hover:bg-primary-container transition-colors">
                         So‘rov yuborish
                     </button>
@@ -644,23 +647,24 @@
                     <span class="font-headline font-800 text-2xl tracking-tight text-on-primary">AslSifat Clean</span>
                 </div>
                 <div class="flex gap-10">
-                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#contact">Aloqa
+                    <a id="footer_contact" class="text-sm font-medium hover:text-primary transition-colors" href="#contact">Aloqa
                         ma’lumotlari</a>
-                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#contact">Ish vaqti</a>
-                    <a class="text-sm font-medium hover:text-primary transition-colors" href="#contact">Ijtimoiy
+                    <a  id="footer_hours" class="text-sm font-medium hover:text-primary transition-colors" href="#contact">Ish vaqti</a>
+                    <a id="footer_social" class="text-sm font-medium hover:text-primary transition-colors" href="#contact">Ijtimoiy
                         tarmoq</a>
                 </div>
             </div>
-            <div
+            <div 
                 class="flex flex-col md:flex-row justify-between items-center gap-4 text-xs font-medium uppercase tracking-[0.2em]">
-                <p>© 2026 AslSifat Clean. All rights reserved.</p>
+                <p id="footer_copy">© 2026 AslSifat Clean. All rights reserved.</p>
                 <div class="flex gap-6">
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Terms of Service</a>
+                    <a id="footer_privacy"  href="#">Privacy Policy</a>
+                    <a  id="footer_terms" href="#">Terms of Service</a>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="asd.js"></script>
 </body>
 
 </html>
